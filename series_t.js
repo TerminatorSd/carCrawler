@@ -1,4 +1,4 @@
-var { getAllHtml } = require('./util/getImg');
+var { getAllHtml } = require('./util/getUrl');
 
 var urlBase = 'https://car.autohome.com.cn/pic/series-t/'
 
