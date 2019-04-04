@@ -1,6 +1,6 @@
 var { getImg } = require('./util/getImg')
 
-txt = 'res_5.txt';
-dir = 'img/5'
+txt = 'res_8.txt';
+dir = 'img/8'
 
 getImg(txt, dir);

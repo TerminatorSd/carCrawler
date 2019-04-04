@@ -3,11 +3,16 @@
 
 ## Quick Start
 ### Step One
+安装依赖
+```
+npm install
+```
+### Step Two
 爬取所有series 系列页面的外观图片，保存url 到txt 文件中
 ```
 node index.js
 ```
-### Step Two
+### Step Three
 根据url 爬取图片
 ```
 node getImgFromUrlList.js

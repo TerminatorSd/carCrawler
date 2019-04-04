@@ -11,7 +11,7 @@ function getImg(txt, dir) {
         runCmd('start img_' + i,
           'cd ' + dir + ' && wget ' + imgList[i] + ' -O img_' + i + '.jpg' ,
           'done img_' + i,
-          i * 40)
+          i * 10)
       }
     }
   })

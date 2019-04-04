@@ -7,14 +7,14 @@ var url = 'https://car.autohome.com.cn/pic/series/2288-1-p1.html' //定义要爬
 
 saveDir = ''
 
-function getAllHtml(urlBase, startIndex, maxGrow, txt) {
+function getAllHtml(urlBase, startIndex, maxIndex, txt) {
   var nowIndex = startIndex;
   saveDir = txt
 
   var intId = setInterval(function() {
     getHtmlAllPagesImg(urlBase, nowIndex)
     nowIndex++;
-    if(nowIndex > startIndex + maxGrow) {
+    if(nowIndex > maxIndex) {
       clearInterval(intId);
     }
   }, 4000)

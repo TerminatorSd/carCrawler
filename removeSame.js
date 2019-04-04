@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-fileName = './res.txt';
+fileName = './res_3.txt';
 
 fs.readFile(fileName, 'utf-8', function(err,data) {
   txtArr = data.split('\n');
