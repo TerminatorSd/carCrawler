@@ -1,10 +1,14 @@
 var fs = require('fs');
 
-fileName = './res_3.txt';
+fileName = './series-t_1.txt';
 
 fs.readFile(fileName, 'utf-8', function(err,data) {
   txtArr = data.split('\n');
   var resArr = remove(txtArr);
+
+  fs.writeFile('./series-t_1.txt', resArr.join('\n'), function(err, data) {
+    console.log('done');
+  })
   console.log(txtArr.length)
   console.log(resArr.length)
 })
