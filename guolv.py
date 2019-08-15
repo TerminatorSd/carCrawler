@@ -25,7 +25,7 @@ def all_path(dirname):
       if(getsize(file_path) / 1000 <= 3):
         # os.remove(file_path)
         sumE += 1
-        print(file_path, '小于3KB')
+        print(file_path, 'size is ' + str(getsize(file_path) / 1000) + 'KB')
 
       # result.append(file_path)
       else:
